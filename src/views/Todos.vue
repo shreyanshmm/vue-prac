@@ -13,12 +13,20 @@
     <div v-else>
       <p>Loading</p>
     </div>
+
+    <Chart />
   </div>
 </template>
 
 <script>
+import Chart from "@/components/Chart.vue";
+
 export default {
   name: "Todos",
+
+  components: {
+    Chart
+  },
 
   beforeMount: function() {
     this.getTodos();
@@ -48,15 +56,16 @@ export default {
 $border-color: #000
 
 ul
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style-type: none
+  padding: 0
+  margin: 0
+  
   li
-    padding: 10px;
-    border-top: 1px solid $border-color;
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
+    padding: 10px
+    border-top: 1px solid $border-color
+    border-left: 1px solid $border-color
+    border-right: 1px solid $border-color
 
   li:last-child
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $border-color
 </style>
