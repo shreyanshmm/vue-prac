@@ -3,7 +3,9 @@
     <div v-if="todos">
       <ul v-if="todos.length > 0">
         <template v-for="(todo, index) in todos">
-          <li :key="todo.id" v-if="index !== 5">{{ index + 1 }}: {{ todo.title }}</li>
+          <li :key="todo.id" v-if="index !== 5">
+            {{ index + 1 }}: {{ todo.title }}
+          </li>
         </template>
       </ul>
       <p v-else>
@@ -34,7 +36,7 @@ export default {
 
   data: () => ({
     todos: null,
-    todo: "GG"
+    todo: "nice!"
   }),
 
   methods: {
@@ -59,7 +61,7 @@ ul
   list-style-type: none
   padding: 0
   margin: 0
-  
+
   li
     padding: 10px
     border-top: 1px solid $border-color

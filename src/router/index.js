@@ -8,19 +8,12 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: Home,
+    component: Home
   },
   {
     path: "/about",
     name: "about",
-    component: () => import("../views/About.vue"),
-    children: [
-      {
-        path: "dashboard/:courseId",
-        name: "dashboard",
-        component: () => import("../components/HelloWorld.vue")
-      }
-    ]
+    component: () => import("../views/About.vue")
   },
   {
     path: "/todos",

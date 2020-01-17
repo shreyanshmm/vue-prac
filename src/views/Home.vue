@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <p>{{ value }}</p> -->
+    <p>{{ v }}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   props: ["value"],
 
   beforeMount: function() {
-    // this.value();
+    this.v = "Shreyans Jain";
   },
 
   data: () => ({
