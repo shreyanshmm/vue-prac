@@ -10,7 +10,7 @@ export default {
   props: ["value"],
 
   beforeMount: function() {
-    this.v = "Shreyans Jain";
+    this.v = "Anmol Jain";
   },
 
   data: () => ({
